@@ -1,0 +1,13 @@
+{
+  "name": "podcast",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Kraig Jacobson <kraig.jacobson@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.3",
+    "nodemon": "^1.17.3",
+    "request": "^2.85.0",
+    "request-promise": "^4.2.2"
+  }
+}
