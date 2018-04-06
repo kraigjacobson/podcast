@@ -16,7 +16,7 @@ if (cluster.isMaster) {
 
     app.listen(3000, () => console.log('Example app listening on port 3000!'));
 
-    app.get('/get-podcast', async (req, res, next) => {
+    app.get('/api/get-podcast', async (req, res, next) => {
         let url;
         
         switch(req.query.provider) {
@@ -48,5 +48,9 @@ if (cluster.isMaster) {
             method: 'GET'
         });
         res.send(data);
+    });
+
+    app.get('/*', async (req, res, next) => {
+        res.sendFile(__dirname + '/public/index.html');
     });
 }

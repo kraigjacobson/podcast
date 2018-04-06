@@ -1,0 +1,15 @@
+#channel img {
+    height: 40px;
+    width: 40px;
+}
+[v-cloak] {
+    display: none;
+  }
+
+  ul {
+      list-style: none;
+  }
+
+.fa-play {
+    cursor: pointer;
+}
